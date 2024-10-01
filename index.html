@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Pachirisu Power</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="fooNavLi"><a href="../index.html">Home</a></li>
+                <li>|</li>
+                <li class="fooNavLi"><a href="/pages/nav1.html">nav 1</a></li>
+                <li>|</li>
+                <li class="fooNavLi"><a href="/pages/nav2.html">nav 2</a></li>
+                <li>|</li>
+                <li class="fooNavLi"><a href="/pages/nav3.html">nav 3</a></li>
+                <li>|</li>
+                <li class="fooNavLi">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown link
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pages/dropdown/dd1.html">Action</a></li>
+                            <li><a class="dropdown-item" href="/pages/dropdown/dd2.html">Another action</a></li>
+                            <li><a class="dropdown-item" href="/pages/dropdown/dd3.html">Something else here</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="divHeader">
+            <div>
+                <img class="imgTitulo" src="/src/latest.webp" alt="">
+                <h1 class="titulo">Pachisiru Power</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="introduccion">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, modi! Ut, quibusdam temporibus voluptatibus
+                tempora dolorum voluptatum repellat delectus accusamus. Recusandae, minus non quaerat ipsa iste pariatur
+                dignissimos aspernatur! Eius? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+                eligendi dolore inventore et incidunt provident laborum perspiciatis sed fuga, fugit quo. Exercitationem
+                alias quam deleniti iste est totam perspiciatis laboriosam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eaque optio ipsum possimus ea
+                perspiciatis praesentium. A architecto dolores, et porro totam eos tempora voluptatem esse cupiditate
+                eaque adipisci alias?</p>
+            <section class="introduccionImgs">
+                <a class="imgIntro1" onclick="abrirModal('modalPrimo')"><img src="/src/latest.webp" alt=""></a>
+                <a class="imgIntro2" onclick="abrirModal('modalSegundo')"><img src="/src/latest.webp" alt=""></a>
+                <a class="imgIntro3" onclick="abrirModal('modalTercero')"><img src="/src/latest.webp" alt=""></a>
+            </section>
+
+        </article>
+        <!--Primer Modal-->
+        <article class="padreModal">
+            <section class="modal1" id="modalPrimo">
+                <div class="modalContent">
+                    <button class="modalButton" onclick="cerrarModal('modalPrimo')">x</button>
+                    <h3 class="modalTitle">Pachirisu</h3>
+                    <img src="/src/latest.webp" alt="" class="modalImg">
+                    <p class="modalTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem
+                        dignissimos nam optio doloribus dolor error minima voluptas labore? Saepe incidunt at beatae
+                        distinctio ex eos enim perspiciatis fugit repellendus. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Aspernatur, ut eveniet aperiam facilis similique corporis natus animi
+                        praesentium ex enim delectus inventore sunt sequi, nesciunt laborum expedita et impedit
+                        repudiandae.
+                    </p>
+                </div>
+            </section>
+        </article>
+        <!--Segundo Modal-->
+        <article class="padreModal">
+            <section class="modal1" id="modalSegundo">
+                <div class="modalContent">
+                    <button class="modalButton" onclick="cerrarModal('modalSegundo')">x</button>
+                    <h3 class="modalTitle">Pachirisu</h3>
+                    <img src="/src/latest.webp" alt="" class="modalImg">
+                    <p class="modalTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem
+                        dignissimos nam optio doloribus dolor error minima voluptas labore? Saepe incidunt at beatae
+                        distinctio ex eos enim perspiciatis fugit repellendus. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Aspernatur, ut eveniet aperiam facilis similique corporis natus animi
+                        praesentium ex enim delectus inventore sunt sequi, nesciunt laborum expedita et impedit
+                        repudiandae.
+                    </p>
+                </div>
+            </section>
+        </article>
+        <!--Tercer Modal-->
+        <article class="padreModal">
+            <section class="modal1" id="modalTercero">
+                <div class="modalContent">
+                    <button class="modalButton" onclick="cerrarModal('modalTercero')">x</button>
+                    <h3 class="modalTitle">Pachirisu</h3>
+                    <img src="/src/latest.webp" alt="" class="modalImg">
+                    <p class="modalTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem
+                        dignissimos nam optio doloribus dolor error minima voluptas labore? Saepe incidunt at beatae
+                        distinctio ex eos enim perspiciatis fugit repellendus. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Aspernatur, ut eveniet aperiam facilis similique corporis natus animi
+                        praesentium ex enim delectus inventore sunt sequi, nesciunt laborum expedita et impedit
+                        repudiandae.
+                    </p>
+                </div>
+            </section>
+        </article>
+
+
+        <article class="form">
+            <h2>Formulario de Contacto</h2>
+            <form action="">
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correoelectronico">Correo Electrónico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required
+                    placeholder="email@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                <input type="submit" value="Enviar formulario" class="enviar">
+            </form>
+        </article>
+    </main>
+    <footer>
+        <img src="/src/latest.webp" alt="">
+        <section class="redes">
+            <h4>Nuestras Redes</h4>
+            <ul>
+                <li class="fooNavLi"><a href="https://www.instagram.com/"><img src="/src/instagram.svg" alt=""></a></li>
+                <li class="fooNavLi"><a href="https://www.linkedin.com/"><img src="/src/linkedin.svg" alt=""></a></li>
+                <li class="fooNavLi"><a href="https://www.facebook.com/"><img src="/src/facebook.svg" alt=""></a></li>
+
+            </ul>
+        </section>
+    </footer>
+
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

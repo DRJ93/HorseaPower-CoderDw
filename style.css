@@ -1,0 +1,306 @@
+/*
+oscuro- rgb(25, 137, 141)
+clarito-rgb(169, 221, 255)
+footer- rgba(25, 137, 141, 0.521)
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*Fonts*/
+/*Titulo principal*/
+.cinzel{
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.urbanist{
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+*{
+    font-family: Urbanist;
+}
+
+body{
+    margin:0%;
+
+}
+
+/*Header*/
+header{
+    background-image: url(/src/sinnohMap.jpg);
+    background-size: 100%;
+    background-position: center;
+    
+}
+
+/*index*/
+
+.divHeader div{
+    background-color: rgba(0, 0, 0, 0.297);
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    grid-template-areas: 
+    "area1 area2 area3 area4 area5";
+}
+
+
+.imgTitulo{
+    margin: auto;
+    width: 75%;
+    padding: 15px;
+    grid-area: area2;
+}
+
+.titulo{
+    grid-area: area3;
+    text-align: start;
+    padding: 25% 10% 0;
+    color: rgb(119, 236, 252);
+    font-size: 3rem;
+    font-family: "Cinzel";
+}
+/*--Index--*/
+/*NAv*/
+nav{
+    display: flex;
+    padding: 1em;
+    justify-content: center;
+    background-color:rgb(25, 137, 141);
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+    text-decoration: none;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration:none;
+    color: rgb(169, 221, 255);
+    font: 1.5em sans-serif;
+}
+
+.dropdown ul{
+    padding: 0;
+    border: solid 2px rgb(25, 137, 141) ;
+    border-radius: 0;
+}
+.dropdown-menu li{
+    width: 100%;
+    text-align: center;
+    background-color: rgba(25, 137, 141, 0.397);
+    padding:0%;
+}
+.dropdown-menu li a{
+    color: rgba(25, 137, 141, 0.521);
+}
+.dropdown-menu li a:hover{
+    color: rgb(169, 221, 255);
+    background-color:  rgba(25, 137, 141, 0.521);
+}
+.fooNavLi{
+    border: 1px solid transparent;
+}
+.fooNavLi:hover{
+    border-bottom: 1px solid rgb(169, 221, 255);
+    transition: 0.5s;
+}
+/*footer*/
+footer{
+    background-color:rgba(25, 137, 141, 0.521) ;
+    display: grid;
+    grid-template-columns: repeat(6, 5fr);
+    grid-template-areas: 
+    " area1 area2 area3 area4 area5 area6";
+    align-items: center;
+    padding: 2rem 0;
+}
+footer img{
+    width: 5rem;
+    display: inline-block;
+    grid-area: area2;
+    width: 5em;
+    
+}
+footer ul{
+    padding: 0%;  
+}
+footer ul li{
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    padding: 0 0.5rem;
+}
+footer ul li img{
+    width: 1.5rem;
+}
+.redes{
+    text-align: center;
+    display: inline-block;
+    grid-area: area5;
+}
+.redes h4{
+    font-size: 1.0rem;
+}
+
+/*Main index*/
+
+/*article iNTRODUCCION*/
+.introduccion{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    padding: 2em;
+    width: 100%;
+    }
+/*Img introduccion*/
+.introduccionImgs{
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    grid-template-areas: 
+    " area1 area2 area3 area4 area5";
+}
+.introduccionImgs img{
+    width: 100%;
+}
+.imgIntro1{
+    grid-area: area2;
+}
+.imgIntro2{
+    grid-area: area3;
+}
+.imgIntro3{
+    grid-area: area4;
+}
+.introduccionImgs img:hover{
+    transform: scale(1.05);
+    transition: 1.05s;
+}
+/*text introduccion*/
+.introduccion p{
+    text-align: center;
+
+}
+
+/*Modals*/
+.padreModal{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+
+
+}
+.modal1{
+    display: none;
+    background-color: rgb(25, 137, 141);
+   width: 50%;
+    border: solid 2px rgb(169, 221, 255);
+    border-radius: 20px;
+    
+}
+.modalContent{
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr 0.5fr;
+    grid-template-rows: 0.25fr auto;
+    grid-template-areas: "area1 area2 area3 area4"
+                         "area1 area5 area3 area7";
+                         padding: 1em;
+}
+.modalTitle{
+    grid-area: area2;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: rgb(131, 220, 255);
+    padding: 20px 0 0;
+}
+.modalButton{
+
+    justify-i: center;
+    width: 30px;
+    height: 30px;
+    grid-area: area4;
+    border-radius: 100%;
+    border: 0;
+    background-color: rgb(169, 221, 255);
+    color:rgb(25, 137, 141) ;
+    font-size: 15px;
+    
+}
+.modalImg{
+    grid-area:area5;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.modalTxt{
+    grid-area: area3;
+    align-content: center;
+    margin: 20% 0;
+    padding: 0 0 0 20px;
+    font-family: sans-serif;
+    color: rgb(131, 220, 255);
+    overflow: auto;
+}
+
+/*form*/
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    text-align: center;
+    padding: 2em;
+    width: 100%;
+    border-top: solid 1px rgba(25, 137, 141, 0.397);
+}
+
+form label, input, textarea{
+    display: block;
+    padding: 10px;
+    width: 80%;
+    
+}
+form input, textarea{
+    padding: 10px;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+.enviar{
+    margin: 1.5em 0;
+}
+.enviar:hover {
+    transition: 1s;
+    transform: scale(1.05);
+    background-color: rgb(160, 242, 248);
+}
+
+
+/*About us*/
+.aboutUsTitle{
+    text-align: center;
+    padding: 20px;
+}
+/*Carrusel*/
+.carousel-item img{
+    width: 100%;
+    height: 450px;
+}
+.aboutUs{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    padding: 30px 0;
+    text-align: center;
+}
+.aboutUsImg{
+    width: 100%;
+}
