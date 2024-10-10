@@ -397,7 +397,7 @@ tr:nth-child(even) {
     background-color: rgb(25, 137, 141);
  
 }
-@media (max-width: 576px){
+@media (max-width: 768px){
 
     /*navbar*/
     header{
