@@ -9,10 +9,10 @@ function cerrarModal(id){
 const lista = document.getElementById('offcanvasResponsive');
 
 function ocultarLista(){
-    console.log('afuera del if ' + innerWidth);
+
     
     if(innerWidth < 768){
-        console.log('en el if')
+
         lista.style =  'display : block';
     }
     else{
