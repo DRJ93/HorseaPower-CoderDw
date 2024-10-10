@@ -393,11 +393,12 @@ tr:nth-child(even) {
 
 
 #offcanvasResponsive{
-
+    display: none;
     background-color: rgb(25, 137, 141);
  
 }
-@media (max-width: 576px ){
+@media (max-width: 576px){
+
     /*navbar*/
     header{
         margin-top: 60px;

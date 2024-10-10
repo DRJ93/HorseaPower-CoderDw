@@ -6,14 +6,19 @@ function cerrarModal(id){
     modal = document.getElementById(id).style= 'display:none';
 
 }
-const lista = document.querySelectorAll("#offcanvasResponsive");
+const lista = document.getElementById('offcanvasResponsive');
+
 function ocultarLista(){
-    if(window.innerWidth < 768){
-        lista.style.display= 'none';
+    console.log('afuera del if ' + innerWidth);
+    
+    if(innerWidth < 576){
+        console.log('en el if')
+        lista.style =  'display : block';
     }
     else{
-        lista.style.display= 'block';
+        lista.style =  'display : none';
     }
+
 }
+ocultarLista(lista);
 window.addEventListener('resize', ocultarLista);
-ocultarLista();
