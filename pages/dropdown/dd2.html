@@ -1,44 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Movimientos</title>
 </head>
+
 <body>
-    
+
     <header>
         <nav>
             <ul>
-                <li class="fooNavLi"><a href="/index.html">Home</a></li>
+                <li class="fooNavLi"><a href="../../index.html">Inicio</a></li>
                 <li>|</li>
-                <li class="fooNavLi"><a href="/pages/nav1.html">nav 1</a></li>
+                <li class="fooNavLi"><a href="/pages/nav1.html">Ubicaciones</a></li>
                 <li>|</li>
-                <li class="fooNavLi"><a href="/pages/nav2.html">nav 2</a></li>
-                <li>|</li>
-                <li class="fooNavLi"><a href="/pages/nav3.html">nav 3</a></li>
+
+                <li class="fooNavLi"><a href="/pages/nav3.html">Kingdra</a></li>
                 <li>|</li>
                 <li class="fooNavLi">
                     <div class="dropdown">
-                      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
-                      </a>
-                    
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/pages/dropdown/dd1.html">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div></li>
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                           Más
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="dd1.html">Anime</a></li>
+                            <li><a class="dropdown-item" href="dd2.html">Movimientos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="offcanvasOpcion">
+                    <a class=" d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+                        aria-controls="offcanvasResponsive" onclick="abrirModal('offcanvasResponsive')">Menu</a>
+                </li>
             </ul>
+
+
         </nav>
+        <div class="offcanvas-sm offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+            aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li class="fooNavLi"><a href="../../index.html">Inicio</a></li>
+                    <li class="fooNavLi"><a href="/pages/nav1.html">Ubicaciones</a></li>
+
+                    <li class="fooNavLi"><a href="/pages/nav3.html">Kingdra</a></li>
+
+
+                    <li class="fooNavLi">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Más
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/dropdown/dd1.html">Anime</a></li>
+                                <li><a class="dropdown-item" href="/pages/dropdown/dd2.html">Movimientos</a></li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
     </header>
-    
+    <main>
+        <h1 class="aboutUsTitle">Movimientos posibles</h1>
+        <article class="padreTabla">
+        <h2>Movimientos por MT (Máquinas Técnicas)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>MT</th>
+                <th>Movimiento</th>
+                <th>Tipo</th>
+                <th>Categoría</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MT03</td>
+                <td>Rayo Burbuja (Bubble Beam)</td>
+                <td>Agua</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MT06</td>
+                <td>Tóxico (Toxic)</td>
+                <td>Veneno</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT07</td>
+                <td>Granizo (Hail)</td>
+                <td>Hielo</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT10</td>
+                <td>Poder Oculto (Hidden Power)</td>
+                <td>Normal</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MT13</td>
+                <td>Rayo Hielo (Ice Beam)</td>
+                <td>Hielo</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MT14</td>
+                <td>Ventisca (Blizzard)</td>
+                <td>Hielo</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MT15</td>
+                <td>Hiperrayo (Hyper Beam)</td>
+                <td>Normal</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MT17</td>
+                <td>Protección (Protect)</td>
+                <td>Normal</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT18</td>
+                <td>Danza Lluvia (Rain Dance)</td>
+                <td>Agua</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT21</td>
+                <td>Frustración (Frustration)</td>
+                <td>Normal</td>
+                <td>Físico</td>
+            </tr>
+            <tr>
+                <td>MT27</td>
+                <td>Retribución (Return)</td>
+                <td>Normal</td>
+                <td>Físico</td>
+            </tr>
+            <tr>
+                <td>MT32</td>
+                <td>Doble Equipo (Double Team)</td>
+                <td>Normal</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT35</td>
+                <td>Lanzallamas (Flamethrower)</td>
+                <td>Fuego</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MT36</td>
+                <td>Bomba Lodo (Sludge Bomb)</td>
+                <td>Veneno</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MT40</td>
+                <td>Golpe Aéreo (Aerial Ace)</td>
+                <td>Volador</td>
+                <td>Físico</td>
+            </tr>
+            <tr>
+                <td>MT42</td>
+                <td>Imagen (Facade)</td>
+                <td>Normal</td>
+                <td>Físico</td>
+            </tr>
+            <tr>
+                <td>MT44</td>
+                <td>Descanso (Rest)</td>
+                <td>Psíquico</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT45</td>
+                <td>Atracción (Attract)</td>
+                <td>Normal</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT48</td>
+                <td>Canje (Skill Swap)</td>
+                <td>Psíquico</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT55</td>
+                <td>Escaldar (Scald)</td>
+                <td>Agua</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MT56</td>
+                <td>Lanzamiento (Fling)</td>
+                <td>Siniestro</td>
+                <td>Físico</td>
+            </tr>
+            <tr>
+                <td>MT66</td>
+                <td>Vendetta (Payback)</td>
+                <td>Siniestro</td>
+                <td>Físico</td>
+            </tr>
+            <tr>
+                <td>MT77</td>
+                <td>Taladradora (Drill Run)</td>
+                <td>Tierra</td>
+                <td>Físico</td>
+            </tr>
+            <tr>
+                <td>MT87</td>
+                <td>Contoneo (Swagger)</td>
+                <td>Normal</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT88</td>
+                <td>Sonámbulo (Sleep Talk)</td>
+                <td>Psíquico</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT90</td>
+                <td>Sustituto (Substitute)</td>
+                <td>Normal</td>
+                <td>Estado</td>
+            </tr>
+            <tr>
+                <td>MT94</td>
+                <td>Surf (Surf)</td>
+                <td>Agua</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MT97</td>
+                <td>Pulso Dragón (Dragon Pulse)</td>
+                <td>Dragón</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MT100</td>
+                <td>Confidencia (Confide)</td>
+                <td>Normal</td>
+                <td>Estado</td>
+            </tr>
+        </tbody>
+    </table>
+</article>
+<article class="padreTabla">
+    <h2>Movimientos por MO (Máquinas Ocultas)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>MO</th>
+                <th>Movimiento</th>
+                <th>Tipo</th>
+                <th>Categoría</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MO03</td>
+                <td>Surf (Surf)</td>
+                <td>Agua</td>
+                <td>Especial</td>
+            </tr>
+            <tr>
+                <td>MO05</td>
+                <td>Cascada (Waterfall)</td>
+                <td>Agua</td>
+                <td>Físico</td>
+            </tr>
+            <tr>
+                <td>MO06</td>
+                <td>Buceo (Dive)</td>
+                <td>Agua</td>
+                <td>Físico</td>
+            </tr>
+        </tbody>
+    </table>
+</article>
+    </main>
     <footer>
-        <img src="/src/latest.webp" alt="">
+        <img src="/src/horsea.png" alt="">
         <section class="redes">
             <h4>Nuestras Redes</h4>
             <ul>
@@ -49,7 +311,11 @@
             </ul>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>

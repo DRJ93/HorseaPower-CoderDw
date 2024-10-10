@@ -8,59 +8,87 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <title>Pachirisu Power</title>
+    <title>Horsea Power</title>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <li class="fooNavLi"><a href="../index.html">Home</a></li>
+                <li class="fooNavLi"><a href="../index.html">Inicio</a></li>
                 <li>|</li>
-                <li class="fooNavLi"><a href="/pages/nav1.html">nav 1</a></li>
+                <li class="fooNavLi"><a href="/pages/nav1.html">Ubicaciones</a></li>
                 <li>|</li>
-                <li class="fooNavLi"><a href="/pages/nav2.html">nav 2</a></li>
+                <li class="fooNavLi"><a href="/pages/nav3.html">Kingdra</a></li>
                 <li>|</li>
-                <li class="fooNavLi"><a href="/pages/nav3.html">nav 3</a></li>
-                <li>|</li>
+
                 <li class="fooNavLi">
                     <div class="dropdown">
                         <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown link
+                            Más
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/pages/dropdown/dd1.html">Action</a></li>
-                            <li><a class="dropdown-item" href="/pages/dropdown/dd2.html">Another action</a></li>
-                            <li><a class="dropdown-item" href="/pages/dropdown/dd3.html">Something else here</a></li>
+                            <li><a class="dropdown-item" href="/pages/dropdown/dd1.html">Anime</a></li>
+                            <li><a class="dropdown-item" href="/pages/dropdown/dd2.html">Movimientos</a></li>
                         </ul>
                     </div>
+                <li class="offcanvasOpcion">
+                    <a class=" d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+                        aria-controls="offcanvasResponsive">Menu</a>
                 </li>
+
             </ul>
         </nav>
+        <div class="offcanvas-sm offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+            aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
 
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li class="fooNavLi"><a href="../index.html">Inicio</a></li>
+                    <li class="fooNavLi"><a href="/pages/nav1.html">Ubicaciones</a></li>
+
+                    <li class="fooNavLi"><a href="/pages/nav3.html">Kingdra</a></li>
+
+
+                    <li class="fooNavLi">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Más
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/dropdown/dd1.html">Anime</a></li>
+                                <li><a class="dropdown-item" href="/pages/dropdown/dd2.html">Movimientos</a></li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
         <div class="divHeader">
             <div>
-                <img class="imgTitulo" src="/src/latest.webp" alt="">
-                <h1 class="titulo">Pachisiru Power</h1>
+                <img class="imgTitulo" src="/src/horsea.png" alt="">
+                <h1 class="titulo">Horsea Power</h1>
             </div>
         </div>
     </header>
     <main>
         <article class="introduccion">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, modi! Ut, quibusdam temporibus voluptatibus
-                tempora dolorum voluptatum repellat delectus accusamus. Recusandae, minus non quaerat ipsa iste pariatur
-                dignissimos aspernatur! Eius? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-                eligendi dolore inventore et incidunt provident laborum perspiciatis sed fuga, fugit quo. Exercitationem
-                alias quam deleniti iste est totam perspiciatis laboriosam?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eaque optio ipsum possimus ea
-                perspiciatis praesentium. A architecto dolores, et porro totam eos tempora voluptatem esse cupiditate
-                eaque adipisci alias?</p>
+            <p>¡Bienvenido a nuestro rincón dedicado a Horsea y sus increíbles evoluciones! Aquí podrás descubrir todo
+                sobre este entrañable Pokémon de tipo Agua, desde sus habilidades en combate hasta su fascinante
+                evolución a Seadra y finalmente a Kingdra. A lo largo de su camino evolutivo, Horsea pasa de ser un
+                adorable compañero acuático a convertirse en una poderosa criatura marina capaz de enfrentarse a los más
+                fuertes. </p>
+            <h2 class="aboutUsTitle">Su cadena evolutiva</h2>
             <section class="introduccionImgs">
-                <a class="imgIntro1" onclick="abrirModal('modalPrimo')"><img src="/src/latest.webp" alt=""></a>
-                <a class="imgIntro2" onclick="abrirModal('modalSegundo')"><img src="/src/latest.webp" alt=""></a>
-                <a class="imgIntro3" onclick="abrirModal('modalTercero')"><img src="/src/latest.webp" alt=""></a>
+                <a class="imgIntro1" onclick="abrirModal('modalPrimo')"><img src="/src/horsea.png" alt=""></a>
+                <a class="imgIntro2" onclick="abrirModal('modalSegundo')"><img src="/src/seadra.png" alt=""></a>
+                <a class="imgIntro3" onclick="abrirModal('modalTercero')"><img src="/src/kingdra.png" alt=""></a>
             </section>
 
         </article>
@@ -69,15 +97,14 @@
             <section class="modal1" id="modalPrimo">
                 <div class="modalContent">
                     <button class="modalButton" onclick="cerrarModal('modalPrimo')">x</button>
-                    <h3 class="modalTitle">Pachirisu</h3>
-                    <img src="/src/latest.webp" alt="" class="modalImg">
-                    <p class="modalTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem
-                        dignissimos nam optio doloribus dolor error minima voluptas labore? Saepe incidunt at beatae
-                        distinctio ex eos enim perspiciatis fugit repellendus. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Aspernatur, ut eveniet aperiam facilis similique corporis natus animi
-                        praesentium ex enim delectus inventore sunt sequi, nesciunt laborum expedita et impedit
-                        repudiandae.
-                    </p>
+                    <h3 class="modalTitle">Horsea</h3>
+                    <img src="/src/horsea.png" alt="" class="modalImg">
+                    <div class="modalTxt">
+                        <p class="modalTxt">Si es atacado por un enemigo, por muy grande que sea, nada veloz a un lugar
+                            seguro gracias a su fornida aleta dorsal.
+                        </p>
+                        <h5>Tipo: Agua</h5>
+                    </div>
                 </div>
             </section>
         </article>
@@ -86,15 +113,14 @@
             <section class="modal1" id="modalSegundo">
                 <div class="modalContent">
                     <button class="modalButton" onclick="cerrarModal('modalSegundo')">x</button>
-                    <h3 class="modalTitle">Pachirisu</h3>
-                    <img src="/src/latest.webp" alt="" class="modalImg">
-                    <p class="modalTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem
-                        dignissimos nam optio doloribus dolor error minima voluptas labore? Saepe incidunt at beatae
-                        distinctio ex eos enim perspiciatis fugit repellendus. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Aspernatur, ut eveniet aperiam facilis similique corporis natus animi
-                        praesentium ex enim delectus inventore sunt sequi, nesciunt laborum expedita et impedit
-                        repudiandae.
-                    </p>
+                    <h3 class="modalTitle">Seadra</h3>
+                    <img src="/src/seadra.png" alt="" class="modalImg">
+                    <div class="modalTxt">
+                        <p>En esta especie, es el macho quien se ocupa de cuidar a las crías, a las que
+                            defiende con sus púas venenosas de cualquiera que se les acerque.
+                        </p>
+                        <h5>Tipo: Agua</h5>
+                    </div>
                 </div>
             </section>
         </article>
@@ -103,15 +129,14 @@
             <section class="modal1" id="modalTercero">
                 <div class="modalContent">
                     <button class="modalButton" onclick="cerrarModal('modalTercero')">x</button>
-                    <h3 class="modalTitle">Pachirisu</h3>
-                    <img src="/src/latest.webp" alt="" class="modalImg">
-                    <p class="modalTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quidem
-                        dignissimos nam optio doloribus dolor error minima voluptas labore? Saepe incidunt at beatae
-                        distinctio ex eos enim perspiciatis fugit repellendus. Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Aspernatur, ut eveniet aperiam facilis similique corporis natus animi
-                        praesentium ex enim delectus inventore sunt sequi, nesciunt laborum expedita et impedit
-                        repudiandae.
-                    </p>
+                    <h3 class="modalTitle">Kingdra</h3>
+                    <img src="/src/kingdra.png" alt="" class="modalImg">
+                    <div class="modalTxt">
+                        <p>Se dice que duerme en el fondo del océano para recargar energía y que crea
+                            remolinos cuando despierta.
+                        </p>
+                        <h5>Tipo: Agua, Dragon.</h5>
+                    </div>
                 </div>
             </section>
         </article>
@@ -119,6 +144,8 @@
 
         <article class="form">
             <h2>Formulario de Contacto</h2>
+            <p>Si tenes ganas de colaborar con nosotros y compartir más datos Pokemon, no dudes en contactarnos! <br>
+                Estamos preparando paginas de otros pokemon :D</p>
             <form action="">
                 <label for="nombreapellido">Nombre y Apellido</label>
                 <input type="text" id="nombreapellido" class="input-padron" required>
@@ -126,10 +153,6 @@
                 <label for="correoelectronico">Correo Electrónico</label>
                 <input type="email" id="correoelectronico" class="input-padron" required
                     placeholder="email@dominio.com">
-
-                <label for="telefono">Teléfono</label>
-                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
-
                 <label for="mensaje">Mensaje</label>
                 <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
                 <input type="submit" value="Enviar formulario" class="enviar">
@@ -137,7 +160,7 @@
         </article>
     </main>
     <footer>
-        <img src="/src/latest.webp" alt="">
+        <img src="/src/horsea.png" alt="">
         <section class="redes">
             <h4>Nuestras Redes</h4>
             <ul>

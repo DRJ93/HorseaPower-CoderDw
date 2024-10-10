@@ -1,45 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../style.css">
-    <title>Document</title>
+    <title>Kingdra</title>
 </head>
+
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">Inicio</a></li>
                 <li>|</li>
-                <li><a href="/pages/nav1.html">nav 1</a></li>
+                <li><a href="/pages/nav1.html">Ubicaciones</a></li>
                 <li>|</li>
-                <li><a href="/pages/nav2.html">nav 2</a></li>
-                <li>|</li>
-                <li><a href="/pages/nav3.html">nav 3</a></li>
+
+                <li><a href="/pages/nav3.html">Kingdra</a></li>
                 <li>|</li>
                 <li>
                     <div class="dropdown">
-                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown link
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Más
                         </a>
-                      
+
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="/pages/dropdown/dd1.html">Action</a></li>
-                          <li><a class="dropdown-item" href="/pages/dropdown/dd2.html">Another action</a></li>
-                          <li><a class="dropdown-item" href="/pages/dropdown/dd3.html">Something else here</a></li>
+                            <li><a class="dropdown-item" href="/pages/dropdown/dd1.html">Anime</a></li>
+                            <li><a class="dropdown-item" href="/pages/dropdown/dd2.html">Movimientos</a></li>
                         </ul>
-                      </div>
+                    </div>
+                </li>
+                <li class="offcanvasOpcion">
+                    <a class=" d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+                        aria-controls="offcanvasResponsive" onclick="abrirModal('offcanvasResponsive')">Menu</a>
                 </li>
             </ul>
-        </nav>
-    </header>
 
+        </nav>
+        <div class="offcanvas-sm offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+            aria-labelledby="offcanvasResponsiveLabel">
+            <div class="offcanvas-header">
+
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li class="fooNavLi"><a href="../index.html">Inicio</a></li>
+                    <li class="fooNavLi"><a href="/pages/nav1.html">Ubicaciones</a></li>
+
+                    <li class="fooNavLi"><a href="/pages/nav3.html">Kingdra</a></li>
+
+
+                    <li class="fooNavLi">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Más
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/pages/dropdown/dd1.html">Anime</a></li>
+                                <li><a class="dropdown-item" href="/pages/dropdown/dd2.html">Movimientos</a></li>
+                            </ul>
+                        </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="kingdraContainer">
+        <article class="aboutKingdra">
+            <h1 class="aboutUsTitle">Kingdra</h1>
+            <p>Kingdra es un Pokémon de tipo Agua/Dragón que destaca por su poder y rareza. En el mundo de Pokémon,
+                Kingdra es conocido por habitar en las profundidades más inaccesibles de los océanos, lo que explica por
+                qué no se le ve comúnmente en el mapa o en áreas de fácil acceso. Vive en fosas submarinas tan profundas
+                que solo los entrenadores más dedicados y con las herramientas adecuadas pueden tener la oportunidad de
+                encontrarlo. <br> Su evolución a partir de Seadra, que requiere el uso de un objeto especial como la
+                Escama Dragón y un intercambio, también contribuye a su rareza. Esta combinación de hábitat remoto y
+                condiciones evolutivas especiales convierte a Kingdra en un Pokémon casi mítico en la naturaleza. Es un
+                símbolo de dominio marino y su ausencia en el mapa refleja el misterio que rodea a las criaturas más
+                poderosas y esquivas del océano profundo.</p>
+            <img src="/src/kingdra.png" alt="kingdra">
+        </article>
+        <article class="escamaDragon">
+            <h2 class="aboutUsTitle">Escama Dragón</h2>
+            <p>La Escama Dragón es un objeto especial en el mundo de Pokémon, conocido por su capacidad para desencadenar la evolución de ciertos Pokémon de tipo Dragón. Es una escama rara que se dice proviene de antiguos dragones, imbuida de una energía especial que potencia las características de tipo Dragón en quienes la portan. </p>
+            <img src="/src/escamaDragon.png" alt="">
+            <h3 class="aboutUsTitle">En los juegos...</h3>
+            <p>En los juegos principales de Pokémon, la Escama Dragón tiene un uso específico: cuando un Seadra la sostiene y es intercambiado, evoluciona a Kingdra, un poderoso Pokémon de tipo Agua/Dragón. Este proceso convierte a Seadra en un Pokémon mucho más fuerte y equilibrado, capaz de utilizar movimientos de tipo Dragón con mayor eficacia, y lo prepara para competir en combates de alto nivel.</p>
+            <h3 class="aboutUsTitle">¿Comó obtenerla?</h3>
+            <p>La Escama Dragón suele encontrarse en zonas acuáticas o es otorgada como recompensa en ciertas misiones. También puede ser obtenida a través de algunos Pokémon que la llevan equipada en estado salvaje, como Horsea o Seadra en diversas generaciones.</p>
+            
+        </article>
+        </div>
+
+    </main>
 
     <footer>
-        <img src="/src/latest.webp" alt="">
+        <img src="/src/horsea.png" alt="">
         <section class="redes">
             <h4>Nuestras Redes</h4>
             <ul>
@@ -51,7 +114,10 @@
         </section>
     </footer>
 
-    
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
