@@ -15,14 +15,14 @@
     <header>
         <nav>
             <ul>
-                <li class="fooNavLi"><a href="../index.html">Inicio</a></li>
+                <li class="navOpcion"><a href="../index.html">Inicio</a></li>
                 <li>|</li>
-                <li class="fooNavLi"><a href="/pages/ubicaciones.html">Ubicaciones</a></li>
+                <li class="navOpcion"><a href="/pages/ubicaciones.html">Ubicaciones</a></li>
                 <li>|</li>
-                <li class="fooNavLi"><a href="/pages/kingdra.html">Kingdra</a></li>
+                <li class="navOpcion"><a href="/pages/kingdra.html">Kingdra</a></li>
                 <li>|</li>
 
-                <li class="fooNavLi">
+                <li class="navOpcion">
                     <div class="dropdown">
                         <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -50,13 +50,13 @@
             </div>
             <div class="offcanvas-body">
                 <ul>
-                    <li class="fooNavLi"><a href="../index.html">Inicio</a></li>
-                    <li class="fooNavLi"><a href="/pages/ubicaciones.html">Ubicaciones</a></li>
+                    <li class="navOpcion"><a href="../index.html">Inicio</a></li>
+                    <li class="navOpcion"><a href="/pages/ubicaciones.html">Ubicaciones</a></li>
 
-                    <li class="fooNavLi"><a href="/pages/kingdra.html">Kingdra</a></li>
+                    <li class="navOpcion"><a href="/pages/kingdra.html">Kingdra</a></li>
 
 
-                    <li class="fooNavLi">
+                    <li class="navOpcion">
                         <div class="dropdown">
                             <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -72,7 +72,7 @@
         </div>
         <div class="divHeader">
             <div>
-                <img class="imgTitulo" src="/src/horsea.png" alt="">
+                <img class="imgTitulo" src="/src/horsea.png" alt="PokemonHorsea">
                 <h1 class="titulo">Horsea Power</h1>
             </div>
         </div>
@@ -84,23 +84,23 @@
                 evolución a Seadra y finalmente a Kingdra. A lo largo de su camino evolutivo, Horsea pasa de ser un
                 adorable compañero acuático a convertirse en una poderosa criatura marina capaz de enfrentarse a los más
                 fuertes. </p>
-            <h2 class="aboutUsTitle">Su cadena evolutiva</h2>
+            <h2 class="titles">Su cadena evolutiva</h2>
             <section class="introduccionImgs">
-                <a class="imgIntro1" onclick="abrirModal('modalPrimo')"><img src="/src/horsea.png" alt=""></a>
-                <a class="imgIntro2" onclick="abrirModal('modalSegundo')"><img src="/src/seadra.png" alt=""></a>
-                <a class="imgIntro3" onclick="abrirModal('modalTercero')"><img src="/src/kingdra.png" alt=""></a>
+                <a class="imgIntroUno" onclick="abrirModal('modalPrimo')"><img src="/src/horsea.png" alt="PokemonHorsea"></a>
+                <a class="imgIntroDos" onclick="abrirModal('modalSegundo')"><img src="/src/seadra.png" alt="PokemonSeadra"></a>
+                <a class="imgIntroTres" onclick="abrirModal('modalTercero')"><img src="/src/kingdra.png" alt="PokemonKingdra"></a>
             </section>
 
         </article>
         <!--Primer Modal-->
         <article class="padreModal">
-            <section class="modal1" id="modalPrimo">
+            <section class="modals" id="modalPrimo">
                 <div class="modalContent">
                     <button class="modalButton" onclick="cerrarModal('modalPrimo')">x</button>
                     <h3 class="modalTitle">Horsea</h3>
                     <img src="/src/horsea.png" alt="" class="modalImg">
-                    <div class="modalTxt">
-                        <p class="modalTxt">Si es atacado por un enemigo, por muy grande que sea, nada veloz a un lugar
+                    <div class="modalTexto">
+                        <p>Si es atacado por un enemigo, por muy grande que sea, nada veloz a un lugar
                             seguro gracias a su fornida aleta dorsal.
                         </p>
                         <h5>Tipo: Agua</h5>
@@ -110,12 +110,12 @@
         </article>
         <!--Segundo Modal-->
         <article class="padreModal">
-            <section class="modal1" id="modalSegundo">
+            <section class="modals" id="modalSegundo">
                 <div class="modalContent">
                     <button class="modalButton" onclick="cerrarModal('modalSegundo')">x</button>
                     <h3 class="modalTitle">Seadra</h3>
                     <img src="/src/seadra.png" alt="" class="modalImg">
-                    <div class="modalTxt">
+                    <div class="modalTexto">
                         <p>En esta especie, es el macho quien se ocupa de cuidar a las crías, a las que
                             defiende con sus púas venenosas de cualquiera que se les acerque.
                         </p>
@@ -126,12 +126,12 @@
         </article>
         <!--Tercer Modal-->
         <article class="padreModal">
-            <section class="modal1" id="modalTercero">
+            <section class="modals" id="modalTercero">
                 <div class="modalContent">
                     <button class="modalButton" onclick="cerrarModal('modalTercero')">x</button>
                     <h3 class="modalTitle">Kingdra</h3>
-                    <img src="/src/kingdra.png" alt="" class="modalImg">
-                    <div class="modalTxt">
+                    <img src="/src/kingdra.png" alt="PokemonKingdra" class="modalImg">
+                    <div class="modalTexto">
                         <p>Se dice que duerme en el fondo del océano para recargar energía y que crea
                             remolinos cuando despierta.
                         </p>
@@ -160,13 +160,13 @@
         </article>
     </main>
     <footer>
-        <img src="/src/horsea.png" alt="">
+        <img src="/src/horsea.png" alt="PokemonHorsea">
         <section class="redes">
             <h4>Nuestras Redes</h4>
             <ul>
-                <li class="fooNavLi"><a href="https://www.instagram.com/"><img src="/src/instagram.svg" alt=""></a></li>
-                <li class="fooNavLi"><a href="https://www.linkedin.com/"><img src="/src/linkedin.svg" alt=""></a></li>
-                <li class="fooNavLi"><a href="https://www.facebook.com/"><img src="/src/facebook.svg" alt=""></a></li>
+                <li ><a href="https://www.instagram.com/"><img src="/src/instagram.svg" alt="logoInstagram"></a></li>
+                <li ><a href="https://www.linkedin.com/"><img src="/src/linkedin.svg" alt="logoLinkedin"></a></li>
+                <li ><a href="https://www.facebook.com/"><img src="/src/facebook.svg" alt="logoFacebook"></a></li>
 
             </ul>
         </section>
