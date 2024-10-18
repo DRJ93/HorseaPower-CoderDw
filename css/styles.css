@@ -259,7 +259,7 @@ nav ul .navOpcion:hover {
   transition: 1.5s;
 }
 .divHeader .tituloPrincipal:hover {
-  transform: scale(1.5);
+  transform: scale(0.905);
 }
 
 .introduccion {
