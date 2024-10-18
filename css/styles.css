@@ -4,501 +4,528 @@ clarito-rgb(169, 221, 255)
 footer- rgba(25, 137, 141, 0.521)
 
 */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-/*Fonts*/
-/*Titulo principal*/
-.cinzel{
+/*Base*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+.cinzel {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 }
 
-
-.urbanist{
+.urbanist {
   font-family: "Urbanist", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: italic;
 }
-*{
-    font-family: Urbanist;
+
+* {
+  font-family: Urbanist;
+  color: #0b2c74;
 }
 
-body{
-    margin:0%;
-
+body {
+  margin: 0%;
+}
+body main {
+  background-color: #def2f5;
 }
 
-/*Header*/
-header{
-    
-    background-image: url(/src/sinnohMap.jpg);
-    background-size: 100%;
-    background-position:bottom;
-    background-attachment: fixed;
+header {
+  height: 70px;
 }
 
-/*index*/
-
-.divHeader div{
-    background-color: rgba(0, 0, 0, 0.297);
-    display: grid;
-    grid-template-columns: repeat(5, 5fr);
-    grid-template-areas: 
-    "area1 area2 area3 area4 area5";
+.titles {
+  text-align: center;
+  padding: 20px;
+  color: #0b2c74;
+  transition: 1.5s;
+}
+.titles:hover {
+  transform: rotateY(160deg);
 }
 
-
-.imgTitulo{
-    margin: auto;
-    width: 75%;
-    padding: 15px;
-    grid-area: area2;
-}
-
-.tituloPrincipal{
-    grid-area: area3;
-    text-align: start;
-    padding: 25% 10% 0;
-    color: rgb(119, 236, 252);
-    font-size: 3rem;
-    font-family: "Cinzel";
-}
-/*--Index--*/
-/*NAv*/
-nav{
-    display: flex;
-    padding: 1em;
-    justify-content: center;
-    background-color:rgb(25, 137, 141);
-}
-nav ul{
-    display: flex;
-    justify-content: end;
-    gap: 1em;
-
-}
-nav ul li{
-    display: inline-block;
-}
-nav ul li a{
-    text-decoration:none;
-    color: rgb(169, 221, 255);
-    font: 1.5em sans-serif;
-}
-
-.dropdown ul{
-    padding: 0;
-    border: solid 2px rgb(25, 137, 141) ;
-    border-radius: 0;
-}
-.dropdown-menu li{
-    width: 100%;
-    text-align: center;
-    background-color: rgba(25, 137, 141, 0.397);
-    padding:0%;
-}
-.dropdown-menu li a{
-    color: rgba(25, 137, 141, 0.521);
-}
-.dropdown-menu li a:hover{
-    color: rgb(169, 221, 255);
-    background-color:  rgba(25, 137, 141, 0.521);
-}
-.navOpcion{
-    border: 1px solid transparent;
-}
-.navOpcion:hover{
-    border-bottom: 1px solid rgb(169, 221, 255);
-    transition: 0.5s;
-}
-/*footer*/
-footer{
-    background-color:rgba(25, 137, 141, 0.521) ;
-    display: grid;
-    grid-template-columns: repeat(6, 5fr);
-    grid-template-areas: 
-    " area1 area2 area3 area4 area5 area6";
-    align-items: center;
-    padding: 2rem 0;
-}
-footer img{
-    width: 5rem;
-    display: inline-block;
-    grid-area: area2;
-    width: 5em;
-    
-}
-footer ul{
-    padding: 0%;  
-}
-footer ul li{
-    display: inline-block;
-    list-style: none;
-    text-align: center;
-    padding: 0 0.5rem;
-}
-footer ul li img{
-    width: 1.5rem;
-}
-.redes{
-    text-align: center;
-    display: inline-block;
-    grid-area: area5;
-}
-.redes h4{
-    font-size: 1.0rem;
-}
-
-/*Main index*/
-
-/*article iNTRODUCCION*/
-.introduccion{
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    padding: 2em;
-    width: 100%;
-    }
-/*Img introduccion*/
-.introduccionImgs{
-    display: grid;
-    grid-template-columns: repeat(5, 5fr);
-    grid-template-areas: 
-    " area1 area2 area3 area4 area5";
-}
-.introduccionImgs img{
-    width: 100%;
-    cursor: pointer;
-}
-.imgIntroUno{
-    grid-area: area2;
-}
-.imgIntroDos{
-    grid-area: area3;
-}
-.imgIntroTres{
-    grid-area: area4;
-}
-.introduccionImgs img:hover{
-    transform: scale(1.05);
-    transition: 1.05s;
-}
-/*text introduccion*/
-.introduccion p{
-    text-align: center;
-
-}
-
+/*Componentes*/
 /*Modals*/
-.padreModal{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
+.padreModal {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+}
+.padreModal .modals {
+  display: none;
+  background-color: #42BFDD;
+  width: 50%;
+  border: solid 2px #bbe6e4;
+  border-radius: 20px;
+}
+.padreModal .modals .modalContent {
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr 0.5fr;
+  grid-template-rows: 0.25fr auto;
+  grid-template-areas: "area1 area2 area3 area4" "area1 area5 area3 area7";
+  padding: 1em;
+}
+.padreModal .modals .modalContent .modalTitle {
+  grid-area: area2;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #0b2c74;
+  padding: 20px 0 0;
+}
+.padreModal .modals .modalContent .modalButton {
+  justify-items: center;
+  width: 30px;
+  height: 30px;
+  grid-area: area4;
+  border-radius: 100%;
+  border: 0;
+  background-color: #bbe6e4;
+  color: #42BFDD;
+  font-size: 15px;
+}
+.padreModal .modals .modalContent .modalImg {
+  grid-area: area5;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.padreModal .modals .modalContent .modalTexto {
+  grid-area: area3;
+  align-content: center;
+  margin: 20% 0;
+  padding: 0 0 0 20px;
+  font-family: sans-serif;
+  color: #0b2c74;
+  overflow: auto;
+}
 
+footer {
+  background-color: #42BFDD;
+  display: grid;
+  grid-template-columns: repeat(6, 5fr);
+  grid-template-areas: " area1 area2 area3 area4 area5 area6";
+  align-items: center;
+  padding: 2rem 0;
+  border-top: 1px solid #0b2c74;
+}
+footer img {
+  width: 5rem;
+  display: inline-block;
+  grid-area: area2;
+  width: 5em;
+  transition: 1.5s;
+}
+footer img:hover {
+  scale: 0.5;
+  transform: rotate(360deg);
+}
+footer ul {
+  padding: 0%;
+}
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+footer ul li img {
+  width: 1.5rem;
+}
 
+.redes {
+  text-align: center;
+  display: inline-block;
+  grid-area: area5;
 }
-.modals{
-    display: none;
-    background-color: rgb(25, 137, 141);
-    width: 50%;
-    border: solid 2px rgb(169, 221, 255);
-    border-radius: 20px;
-    
+.redes h4 {
+  color: #0b2c74;
+  font-size: 1rem;
 }
-.modalContent{
-    display: grid;
-    grid-template-columns: 1fr 5fr 5fr 0.5fr;
-    grid-template-rows: 0.25fr auto;
-    grid-template-areas: "area1 area2 area3 area4"
-                         "area1 area5 area3 area7";
-                         padding: 1em;
-}
-.modalTitle{
-    grid-area: area2;
-    font-size: xx-large;
-    font-weight: bold;
-    font-family: sans-serif;
-    color: rgb(131, 220, 255);
-    padding: 20px 0 0;
-}
-.modalButton{
 
-    justify-items: center;
-    width: 30px;
-    height: 30px;
-    grid-area: area4;
-    border-radius: 100%;
-    border: 0;
-    background-color: rgb(169, 221, 255);
-    color:rgb(25, 137, 141) ;
-    font-size: 15px;
-    
+nav {
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+  background-color: #42BFDD;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid #0b2c74;
 }
-.modalImg{
-    grid-area:area5;
-    width: 100%;
-    padding-bottom: 1rem;
+nav ul {
+  display: flex;
+  justify-content: end;
+  gap: 1em;
 }
-.modalTexto{
-    grid-area: area3;
-    align-content: center;
-    margin: 20% 0;
-    padding: 0 0 0 20px;
-    font-family: sans-serif;
-    color: rgb(131, 220, 255);
-    overflow: auto;
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #0b2c74;
+  font: 1.5em sans-serif;
+}
+nav ul .navOpcion {
+  border: 1px solid transparent;
+}
+nav ul .navOpcion:hover {
+  border-bottom: 1px solid #0b2c74;
+  transition: 0.5s;
+}
+
+.dropdown .dropdown-menu li {
+  width: 100%;
+  text-align: center;
+  background-color: #bbe6e4;
+  padding: 0%;
+}
+.dropdown .dropdown-menu li a {
+  color: #0b2c74;
+}
+.dropdown .dropdown-menu li a:hover {
+  color: #bbe6e4;
+  background-color: #42BFDD;
+}
+.dropdown ul {
+  padding: 0;
+  border: solid 2px #42BFDD;
+  border-radius: 0;
+}
+
+/*Layouts*/
+/*Anime*/
+.animeContenido {
+  padding: 0 10% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.animeContenido .animeContenidoDos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+.animeContenido .animeContenidoDos img {
+  width: 75%;
+}
+.animeContenido .animeContenidoUno {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 2rem;
+}
+.animeContenido .animeContenidoUno img {
+  display: inline;
+  width: 30%;
+}
+
+.divHeader {
+  background-image: url(/src/sinnohMap.jpg);
+  background-size: 100%;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+.divHeader div {
+  background: radial-gradient(rgba(236, 248, 248, 0.568627451), rgba(0, 0, 0, 0.678));
+  display: grid;
+  grid-template-columns: repeat(5, 5fr);
+  grid-template-areas: "area1 area2 area3 area4 area5";
+}
+.divHeader .imgTitulo {
+  margin: auto;
+  width: 75%;
+  padding: 15px;
+  grid-area: area2;
+  transition: 1.5s;
+}
+.divHeader .imgTitulo:hover {
+  scale: 0.5;
+  transform: rotate(360deg);
+}
+.divHeader .tituloPrincipal {
+  grid-area: area3;
+  text-align: start;
+  padding: 25% 10% 0;
+  color: #0b2c74;
+  font-size: 3rem;
+  font-family: "Cinzel";
+  transition: 1.5s;
+}
+.divHeader .tituloPrincipal:hover {
+  transform: scale(1.5);
+}
+
+.introduccion {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  padding: 2em;
+  width: 90%;
+  justify-self: center;
+}
+.introduccion .introduccionImgs {
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-content: center;
+  width: 80%;
+}
+.introduccion .introduccionImgs img {
+  width: 100%;
+  cursor: pointer;
+}
+.introduccion .introduccionImgs img:hover {
+  transform: scale(1.05);
+  transition: 1.05s;
+}
+.introduccion .introduccionImgs .imgIntroUno {
+  grid-area: area2;
+}
+.introduccion .introduccionImgs .imgIntroDos {
+  grid-area: area3;
+}
+.introduccion .introduccionImgs .imgIntroTres {
+  grid-area: area4;
+}
+.introduccion p {
+  text-align: center;
 }
 
 /*form*/
-.form{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: start;
-    text-align: center;
-    padding: 2em;
-    width: 100%;
-    border-top: solid 1px rgba(25, 137, 141, 0.397);
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  padding: 2em;
+  width: 100%;
+  border-top: solid 1px #0b2c74;
 }
-
-form label, input, textarea{
-    display: block;
-    padding: 10px;
-    width: 80%;
-    
+.form p {
+  width: 30%;
+  text-align: left;
 }
-form input, textarea{
-    padding: 10px;
-    border: solid 3px black;
-    border-radius: 10px;
+.form form label,
+.form form input,
+.form form textarea {
+  display: block;
+  padding: 10px;
+  width: 80%;
 }
-.enviar{
-    margin: 1.5em 0;
+.form form input,
+.form form textarea {
+  padding: 10px;
+  border: solid 3px #0b2c74;
+  border-radius: 10px;
 }
-.enviar:hover {
-    transition: 1s;
-    transform: scale(1.05);
-    background-color: rgb(160, 242, 248);
+.form form .enviar {
+  margin: 1.5em 0;
 }
-.form p{
-    width: 30%;
-    text-align: left;
-}
-
-/*About us*/
-.titles{
-    text-align: center;
-    padding: 20px;
-}
-/*Carrusel*/
-.carousel-item img{
-    width: 100%;
-    height: 90vh;
-
-
-}
-.ubicacionesContent{
-    display: grid;
-    grid-template-columns: 25% 50% 25%;
-    width: 100%;
-    justify-items: center;
-    align-items: center;
-    padding: 30px 0;
-    text-align: center;
-}
-.ubicacionesContent ul {
-    list-style: none;
-    margin: 0;
-    padding: 0%;
-}
-
-.ubicacionesImg{
-    width: 100%;
-}
-.horsea{
-    grid-area: 1/1;
-}
-.seadra{
-    grid-area: 1/3;
+.form form .enviar:hover {
+  transition: 1s;
+  transform: scale(1.05);
+  background-color: #bbe6e4;
 }
 
 /*AboutKingdra*/
 .kingdraContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
-.aboutKingdra, .escamaDragon{
-    text-align: center;
-    width: 70%;
-    padding:0 0 20px;
-
+.kingdraContainer .aboutKingdra, .kingdraContainer .escamaDragon {
+  text-align: center;
+  width: 70%;
+  padding: 0 0 20px;
 }
-.aboutKingdra img, .escamaDragon img{
-    width: 200px;
-}
-
-/*Anime*/
-.animeContenido{
-    padding: 0 10% 10% ;
-    display: flex;
-   flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-.animeContenidoUno, .animeContenidoDos{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 2rem;
-}
-.animeContenidoDos{
-    flex-direction: row;
-}
-.animeContenidoDos img{
-    width: 75%;
-}
-.animeContenidoUno img{
-   display: inline;
-    width: 30%;
+.kingdraContainer .aboutKingdra img, .kingdraContainer .escamaDragon img {
+  width: 200px;
 }
 
 /*Movmientos*/
-.padreTabla{
-    display: flex;
+.padreTabla {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #0b2c74;
+}
+
+th {
+  background-color: #42BFDD;
+}
+
+tr:nth-child(even) {
+  background-color: #bbe6e4;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 93vh;
+  background: fixed black;
+}
+
+.ubicacionesContent {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  padding: 30px 0;
+  text-align: center;
+}
+.ubicacionesContent ul {
+  list-style: none;
+  margin: 0;
+  padding: 0%;
+}
+.ubicacionesContent .horsea {
+  grid-area: 1/1;
+}
+.ubicacionesContent .seadra {
+  grid-area: 1/3;
+}
+.ubicacionesContent img {
+  width: 150px;
+  transition: 1.5s;
+}
+.ubicacionesContent img:hover {
+  transform: rotateY(180deg);
+  scale: 0.7;
+}
+.ubicacionesContent .ubicacionesImg {
+  width: 100%;
+}
+
+#offcanvasResponsive {
+  display: none;
+  background-color: #42BFDD;
+}
+
+@media (max-width: 768px) {
+  /*navbar*/
+  nav {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    justify-content: end;
+  }
+  nav ul li {
+    display: none;
+  }
+  .offcanvasOpcion {
+    display: block;
+  }
+  .dropdown-menu li a {
+    background-color: #42BFDD;
+    border: 3px solid #42BFDD;
+    text-align: left;
+  }
+  .offcanvas-body {
+    height: 100%;
+  }
+  .offcanvas-body ul li {
+    list-style: none;
+  }
+  .offcanvas-body ul li a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #0b2c74;
+  }
+  .offcanvas-body,
+  .offcanvas-header {
+    background-color: #42BFDD;
+    color: #0b2c74;
+  }
+  .navOpcion:hover {
+    border-left: 1px solid #0b2c74;
+    border-bottom: 0;
+    padding: 1rem;
+    transition: 0.5s;
+  }
+  /*index*/
+  .divHeader .imgTitulo {
+    width: 100%;
+    padding: 0;
+  }
+  .introduccion .introduccionImgs {
     flex-direction: column;
+    gap: 2rem;
     justify-content: center;
     align-items: center;
+  }
+  .introduccion .introduccionImgs img {
+    width: 170px;
+  }
+  .introduccion .introduccionImgs a {
+    width: 170px;
+  }
+  .padreModal .modals {
+    width: 90%;
+  }
+  .form label,
+  .form input,
+  .form textarea,
+  .form p,
+  .form h2 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*Ubicaciones*/
+  .carousel-item img {
+    height: 25rem;
+  }
+  .ubicacionesContent {
+    display: flex;
+    flex-direction: column;
     padding: 2rem;
-}
-table {
-    width: 60%;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-}
-th {
-    background-color: #f2f2f2;
-}
-tr:nth-child(even) {
-    background-color: #f9f9f9;
+  }
+  .ubicacionesContent img {
+    width: 25%;
+  }
+  /*Kingdra no rompe*/
+  /*anime*/
+  .animeContenido .animeContenidoUno,
+  .animeContenido .animeContenidoDos {
+    flex-direction: column-reverse;
+  }
+  .animeContenido .animeContenidoUno img {
+    width: 50%;
+  }
+  /*footer*/
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
-
-#offcanvasResponsive{
-    display: none;
-    background-color: rgb(25, 137, 141);
- 
-}
-@media (max-width: 768px){
-
-    /*navbar*/
-    header{
-        margin-top: 60px;
-    }
-    nav{
-        position: fixed;
-        height: 60px;
-        width: 100%;
-        z-index: 2;
-        top: 0;
-        justify-content: end;
-    }
-    nav ul li{
-        display: none;
-    }
-    .offcanvasOpcion{
-       display: block;
-    }
-    .offcanvas-body{
-        height: 100%;
-    }
-    .offcanvas-body, .offcanvas-header{
-        background-color: rgb(25, 137, 141);
-        color:rgb(169, 221, 255) ;
-       
-
-    }
-    .offcanvas-body ul li, .offcanvas-body ul li a{
-        list-style: none;
-        font-size: 2rem;
-        text-decoration: none;
-        color:rgb(169, 221, 255) ;
-    }
-    .dropdown-menu li a, .dropdown-menu li{
-        background-color:rgb(25, 137, 141) ;
-        border: 3px solid rgb(25, 137, 141);
-        text-align: left;
-    }
-    .navOpcion:hover{
-        border-left: 1px solid rgb(169, 221, 255);
-        border-bottom: 0;
-        padding: 1rem;
-        transition: 0.5s;
-    }
-
-    /*index*/
-    .imgTitulo{
-        width: 100%;
-        padding: 0;
-    }
-    .introduccionImgs{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        gap: 2rem;
-        
-    }
-    .introduccionImgs img a{
-        width: 30%; 
-    }
-    .introduccionImgs img{
-        width: 170px;
-    }
-    .modals{
-        width: 95%;
-    }
-
-    .form label, .form input, .form textarea, .form p{
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
- 
-    /*Ubicaciones*/
-    .carousel-item img{
-        height: 25rem;
-    }    
-    .ubicacionesContent{
-        display: flex;
-        flex-direction: column;
-        padding: 2rem;
-    }
-    .ubicacionesContent Img{
-        width: 65%;
-    }
-    /*Kingdra no rompe*/
- 
-    /*anime*/
-    .animeContenidoUno, .animeContenidoDos{
-        flex-direction: column;
-    }
-    .animeContenidoUno img{
-        width: 50%;
-    }
-    /*footer*/
-    footer ul{
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-    }
-}
+/*# sourceMappingURL=styles.css.map */

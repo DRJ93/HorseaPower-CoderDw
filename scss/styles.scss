@@ -1,0 +1,22 @@
+/*
+oscuro- rgb(25, 137, 141)
+clarito-rgb(169, 221, 255)
+footer- rgba(25, 137, 141, 0.521)
+
+*/
+
+
+/*Base*/
+@import "base/colores";
+@import"base/reset";
+@import "base/clases";
+/*Componentes*/
+@import "components/modals", "components/footer", "components/nav";
+/*Layouts*/
+@import "layouts/anime", "layouts/index", "layouts/kingdra", "layouts/movimientos", "layouts/ubicaciones", "layouts/media";
+
+
+
+
+
+

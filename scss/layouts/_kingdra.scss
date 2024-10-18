@@ -1,0 +1,17 @@
+
+/*AboutKingdra*/
+.kingdraContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    .aboutKingdra, .escamaDragon{
+        text-align: center;
+        width: 70%;
+        padding:0 0 20px;
+        img{
+            width: 200px;
+        }
+    }
+}

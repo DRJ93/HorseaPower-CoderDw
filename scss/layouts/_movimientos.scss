@@ -1,0 +1,23 @@
+/*Movmientos*/
+.padreTabla{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+table {
+    width: 60%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid $colorCuarto;
+}
+th {
+    background-color: $colorSecundario;
+}
+tr:nth-child(even) {
+    background-color: $colorTerciario;
+}

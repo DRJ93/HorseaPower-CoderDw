@@ -1,0 +1,66 @@
+/*Modals*/
+.padreModal {
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+
+    .modals {
+        display: none;
+        background-color: $colorSecundario;
+        width: 50%;
+        border: solid 2px $colorTerciario;
+        border-radius: 20px;
+
+        .modalContent {
+            display: grid;
+            grid-template-columns: 1fr 5fr 5fr 0.5fr;
+            grid-template-rows: 0.25fr auto;
+            grid-template-areas: "area1 area2 area3 area4"
+                "area1 area5 area3 area7";
+            padding: 1em;
+
+
+            .modalTitle {
+                grid-area: area2;
+                font-size: xx-large;
+                font-weight: bold;
+                font-family: sans-serif;
+                color: $colorCuarto;
+                padding: 20px 0 0;
+            }
+
+            .modalButton {
+
+                justify-items: center;
+                width: 30px;
+                height: 30px;
+                grid-area: area4;
+                border-radius: 100%;
+                border: 0;
+                background-color: $colorTerciario;
+                color: $colorSecundario ;
+                font-size: 15px;
+
+            }
+
+            .modalImg {
+                grid-area: area5;
+                width: 100%;
+                padding-bottom: 1rem;
+            }
+
+            .modalTexto {
+                grid-area: area3;
+                align-content: center;
+                margin: 20% 0;
+                padding: 0 0 0 20px;
+                font-family: sans-serif;
+                color: $colorCuarto;
+                overflow: auto;
+            }
+        }
+    }
+
+}

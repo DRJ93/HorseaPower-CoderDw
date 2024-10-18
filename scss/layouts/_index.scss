@@ -1,0 +1,133 @@
+.divHeader {
+    background-image: url(/src/sinnohMap.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    background-attachment: fixed;
+
+    div {
+
+        background: radial-gradient(#ecf8f891, rgba(0, 0, 0, 0.678));
+        display: grid;
+        grid-template-columns: repeat(5, 5fr);
+        grid-template-areas:
+            "area1 area2 area3 area4 area5";
+    }
+
+    .imgTitulo {
+        margin: auto;
+        width: 75%;
+        padding: 15px;
+        grid-area: area2;
+        transition: 1.5s;
+        &:hover{
+            scale: 0.5;
+            transform:rotate(360deg);
+        }
+    }
+
+    .tituloPrincipal {
+        grid-area: area3;
+        text-align: start;
+        padding: 25% 10% 0;
+        color: $colorCuarto;
+        font-size: 3rem;
+        font-family: "Cinzel";
+        transition: 1.5s;
+        
+        &:hover{
+            transform: scale(1.5);
+            
+        }
+    }
+}
+.introduccion {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    padding: 2em;
+    width: 90%;
+    justify-self: center;
+    .introduccionImgs {
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        align-content: center;
+        width: 80%;
+        img {
+            width: 100%;
+            cursor: pointer;
+
+            &:hover {
+
+                transform: scale(1.05);
+                transition: 1.05s;
+            }
+        }
+
+        .imgIntroUno {
+            grid-area: area2;
+        }
+
+        .imgIntroDos {
+            grid-area: area3;
+        }
+
+        .imgIntroTres {
+            grid-area: area4;
+        }
+
+    }
+
+    p {
+
+        text-align: center;
+    }
+}
+
+/*form*/
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    padding: 2em;
+    width: 100%;
+    border-top: solid 1px $colorCuarto;
+
+    p {
+
+        width: 30%;
+        text-align: left;
+    }
+
+    form {
+
+        label,
+        input,
+        textarea {
+            display: block;
+            padding: 10px;
+            width: 80%;
+
+        
+
+        }
+        input,
+        textarea {
+            padding: 10px;
+            border: solid 3px $colorCuarto;
+            border-radius: 10px;
+        }
+        .enviar {
+            margin: 1.5em 0;
+
+            &:hover {
+                transition: 1s;
+                transform: scale(1.05);
+                background-color: $colorTerciario;
+            }
+        }
+    }
+
+
+}

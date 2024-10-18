@@ -1,0 +1,31 @@
+/*Anime*/
+.animeContenido {
+    padding: 0 10% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    .animeContenidoDos {
+       
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+
+        img {
+            width: 75%;
+        }
+    }
+
+    .animeContenidoUno{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 2rem;
+        img {
+        display: inline;
+        width: 30%;
+    }
+}}

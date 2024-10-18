@@ -1,0 +1,43 @@
+footer{
+    background-color:$colorSecundario ;
+    display: grid;
+    grid-template-columns: repeat(6, 5fr);
+    grid-template-areas: 
+    " area1 area2 area3 area4 area5 area6";
+    align-items: center;
+    padding: 2rem 0;
+    border-top: 1px solid $colorCuarto;
+    img{
+        width: 5rem;
+        display: inline-block;
+        grid-area: area2;
+        width: 5em;
+        transition: 1.5s;
+        &:hover{
+            scale: 0.5;
+            transform:rotate(360deg);
+        }
+        
+    }
+    ul{
+        padding: 0%;  
+        li{
+            display: inline-block;
+            list-style: none;
+            text-align: center;
+            padding: 0 0.5rem;
+            img{
+                width: 1.5rem;
+            }
+        }
+    }
+}
+.redes{
+    text-align: center;
+    display: inline-block;
+    grid-area: area5;
+    h4{
+        color: $colorCuarto;
+        font-size: 1.0rem;
+    }
+}
