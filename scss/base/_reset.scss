@@ -23,8 +23,5 @@ body{
     text-align: center;
     padding: 20px;
     color: $colorCuarto;
-    transition: 1.5s;
-    &:hover{
-        transform: rotateY(160deg);
-    }
+
 }
