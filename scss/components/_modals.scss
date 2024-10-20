@@ -3,9 +3,11 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
+    top: 25rem;
     width: 100%;
     .modals {
+       
         display: none;
         background-color: $colorSecundario;
         width: 50%;

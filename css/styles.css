@@ -46,7 +46,7 @@ p {
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
+  top: 25rem;
   width: 100%;
 }
 .padreModal .modals {
