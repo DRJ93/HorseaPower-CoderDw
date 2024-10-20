@@ -71,10 +71,16 @@
 
     /*index*/
     .divHeader {
+      div{
         .imgTitulo {
-            width: 100%;
+            width: 180px;
             padding: 0;
         }
+        .tituloPrincipal{
+            font-size: 2rem;
+            
+           
+        }}
     }
 
     .introduccion {

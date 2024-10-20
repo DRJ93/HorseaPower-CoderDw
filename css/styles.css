@@ -235,7 +235,7 @@ nav ul .navOpcion:hover {
   height: 25rem;
 }
 .divHeader div .imgTitulo {
-  width: 25em;
+  width: 20em;
   padding: 15px;
   transition: 1.5s;
 }
@@ -469,9 +469,12 @@ tr:nth-child(even) {
     transition: 0.5s;
   }
   /*index*/
-  .divHeader .imgTitulo {
-    width: 100%;
+  .divHeader div .imgTitulo {
+    width: 180px;
     padding: 0;
+  }
+  .divHeader div .tituloPrincipal {
+    font-size: 2rem;
   }
   .introduccion .introduccionImgs {
     flex-direction: column;
