@@ -12,6 +12,12 @@
         padding:0 0 20px;
         img{
             width: 200px;
+            transition: 1.5s;
+            &:hover{
+                transform: rotateY(180deg);
+                scale : 1.3;
+                
+            }
         }
     }
 }
