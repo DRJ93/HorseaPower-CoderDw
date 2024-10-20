@@ -1,11 +1,10 @@
 /*Modals*/
 .padreModal {
-
+    position: absolute;
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 50%;
-
+    align-items: center;
+    width: 100%;
     .modals {
         display: none;
         background-color: $colorSecundario;

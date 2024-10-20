@@ -37,16 +37,17 @@ header {
 }
 
 p {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 /*Componentes*/
 /*Modals*/
 .padreModal {
+  position: absolute;
   display: flex;
   justify-content: center;
-  position: absolute;
-  top: 50%;
+  align-items: center;
+  width: 100%;
 }
 .padreModal .modals {
   display: none;
