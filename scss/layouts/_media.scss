@@ -22,9 +22,16 @@
         }
 
     }
-
+   
     .offcanvasOpcion {
         display: block;
+        
+        a{
+            width: 40px;
+            .menu-responsive{
+            width: 40px;
+        }
+        }
     }
 
     .dropdown-menu li a {
@@ -119,7 +126,7 @@
 
     /*Ubicaciones*/
     .carousel-item img {
-        height: 25rem;
+        height: 20rem;
     }
 
     .ubicacionesContent {

@@ -25,7 +25,7 @@ $colorCuarto: #0b2c74;
 @import"base/reset";
 @import "base/clases";
 /*Componentes*/
-@import "components/modals", "components/footer", "components/_nav.scss";
+@import "components/modals", "components/_footer.scss", "components/_nav.scss";
 /*Layouts*/
 @import "layouts/anime", "layouts/index", "layouts/kingdra", "layouts/movimientos", "layouts/ubicaciones", "layouts/media";
 

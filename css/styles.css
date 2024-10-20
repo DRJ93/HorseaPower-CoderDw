@@ -375,8 +375,7 @@ tr:nth-child(even) {
 
 .carousel-item img {
   width: 100%;
-  height: 93vh;
-  background: fixed black;
+  height: 100vh;
 }
 
 .ubicacionesContent {
@@ -431,6 +430,12 @@ tr:nth-child(even) {
   }
   .offcanvasOpcion {
     display: block;
+  }
+  .offcanvasOpcion a {
+    width: 40px;
+  }
+  .offcanvasOpcion a .menu-responsive {
+    width: 40px;
   }
   .dropdown-menu li a {
     background-color: #42BFDD;
@@ -495,7 +500,7 @@ tr:nth-child(even) {
   }
   /*Ubicaciones*/
   .carousel-item img {
-    height: 25rem;
+    height: 20rem;
   }
   .ubicacionesContent {
     display: flex;
