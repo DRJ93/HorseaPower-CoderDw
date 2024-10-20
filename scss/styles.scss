@@ -1,17 +1,31 @@
-/*
-oscuro- rgb(25, 137, 141)
-clarito-rgb(169, 221, 255)
-footer- rgba(25, 137, 141, 0.521)
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-*/
+.cinzel{
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.urbanist{
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+$colorPrimario :#def2f5;
+$colorSecundario:#42BFDD;
+$colorTerciario:#bbe6e4 ;
+$colorCuarto: #0b2c74;
+
 
 
 /*Base*/
-@import "base/colores";
 @import"base/reset";
 @import "base/clases";
 /*Componentes*/
-@import "components/modals", "components/footer", "components/nav";
+@import "components/modals", "components/footer", "components/_nav.scss";
 /*Layouts*/
 @import "layouts/anime", "layouts/index", "layouts/kingdra", "layouts/movimientos", "layouts/ubicaciones", "layouts/media";
 
