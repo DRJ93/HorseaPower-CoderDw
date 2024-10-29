@@ -22,7 +22,10 @@ body{
     text-align: center;
     padding: 20px;
     color: $colorCuarto;
-
+    font-weight: 600;
+    &:nth-child(1){
+        font-size: 50px;
+    }
 }
 p{
     font-size: 25px;

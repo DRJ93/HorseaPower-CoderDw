@@ -11,7 +11,7 @@ const lista = document.getElementById('offcanvasResponsive');
 function ocultarLista(){
 
     
-    if(innerWidth < 768){
+    if(innerWidth < 992){
 
         lista.style =  'display : block';
     }

@@ -37,13 +37,13 @@
                         </ul>
                     </div>
                 <li class="offcanvasOpcion">
-                    <a class=" d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
+                    <a class=" d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive"
                         aria-controls="offcanvasResponsive" href="#"><img class="menu-responsive" src="/src/menu.svg" alt="menu-responsive"></a>
                 </li>
 
             </ul>
         </nav>
-        <div class="offcanvas-md offcanvas-end" tabindex="-1" id="offcanvasResponsive"
+        <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive"
             aria-labelledby="offcanvasResponsiveLabel">
             <div class="offcanvas-header">
 
@@ -89,6 +89,7 @@
                 adorable compañero acuático a convertirse en una poderosa criatura marina capaz de enfrentarse a los más
                 fuertes. </p>
             <h2 class="titles">Su cadena evolutiva</h2>
+            <p>Presionalos para saber más de cada uno !!</p>
             <section class="introduccionImgs">
                 <a href="#modalPrimo" class="imgIntroUno" onclick="abrirModal('modalPrimo')"><img src="/src/horsea.png" alt="PokemonHorsea"></a>
                 <a href="#modalSegundo" class="imgIntroDos" onclick="abrirModal('modalSegundo')"><img src="/src/seadra.png" alt="PokemonSeadra"></a>
@@ -100,7 +101,7 @@
         <article class="padreModal">
             <section class="modals" id="modalPrimo">
                 <div class="modalContent">
-                    <button class="modalButton" onclick="cerrarModal('modalPrimo')">>x</button>
+                    <button class="modalButton" onclick="cerrarModal('modalPrimo')">x</button>
                     <h3 class="modalTitle">Horsea</h3>
                     <img src="/src/horsea.png" alt="PokemonHorsea" class="modalImg">
                     <div class="modalTexto">
@@ -150,7 +151,7 @@
             <h2>Formulario de Contacto</h2>
             <p>Si tenes ganas de colaborar con nosotros y compartir más datos Pokemon, no dudes en contactarnos! <br>
                 Estamos preparando paginas de otros pokemon :D</p>
-            <form action="">
+            <form action="" target="request">
                 <label for="nombreapellido">Nombre y Apellido</label>
                 <input type="text" id="nombreapellido" class="input-padron" required>
 
@@ -162,7 +163,6 @@
                 <input type="submit" value="Enviar formulario" class="enviar">
             </form>
         </article>
-    
     </main>
     <footer>
         <img src="/src/horsea.png" alt="PokemonHorsea">
@@ -178,7 +178,6 @@
     </footer>
 
     <script src="main.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

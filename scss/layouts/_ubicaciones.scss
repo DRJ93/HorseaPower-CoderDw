@@ -1,8 +1,15 @@
+.carousel-item {
+    background-color: $colorCuarto;
 
-.carousel-item img {
-    width: 100%;
-    height: 80vh;
+    img {
+        width: 100%;
+        height: 85vh;
+        background-color: rgba(0, 0, 0, 0.171);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.8;
 
+    }
 }
 
 .ubicacionesContent {
@@ -13,13 +20,31 @@
     align-items: center;
     padding: 30px 0;
     text-align: center;
-    
+
 
     ul {
 
         list-style: none;
         margin: 0;
         padding: 0%;
+
+        li:nth-child(2n+1) {
+            padding: 1rem;
+            border-left: 1px solid $colorCuarto;
+            text-align: left;
+        }
+
+        li:nth-child(2n) {
+            padding: 1rem;
+            border-right: 1px solid $colorCuarto;
+            text-align: right;
+            background-color:rgba(161, 241, 255, 0.507);
+        }
+
+        li h3 {
+            font-weight: bold;
+            font-style: italic;
+        }
     }
 
     .horsea {
@@ -29,16 +54,18 @@
     .seadra {
         grid-area: 1/3;
     }
-    img{
+
+    img {
         width: 150px;
         transition: 1.5s;
-        
-    &:hover{
-        transform: rotateY(180deg);
-        scale : 0.7;
-        
+
+        &:hover {
+            transform: rotateY(180deg);
+            scale: 0.7;
+
+        }
     }
-}
+
     .ubicacionesImg {
         width: 100%;
     }
